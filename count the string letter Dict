@@ -1,0 +1,21 @@
+string_2 = 'aaafvvvvvvvvvvv'
+
+def listl(string_2):
+    m = []        
+    for b in string_2:
+        m.append(b)
+    return m
+# This code to split the string 
+myl_5 = listl(string_2)
+
+def num(myl_5):
+    dicc = {}
+    for x in range(len(myl_5)):
+        key = myl_5[x]
+        if key not in dicc:
+            dicc[key] = 1 
+        else:
+            dicc[key] = dicc[key] + 1 
+    return dicc
+fadhel = num(string_2)
+print(fadhel)
