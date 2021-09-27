@@ -1,0 +1,28 @@
+
+
+number = [3,6,5,4,4,4,1,1,1,2,2,2,10]
+
+number.sort()
+
+
+
+def dic_1(number):
+    box = {}
+    box_1 = []
+    for x in range(len(number)):
+        key = number[x]
+        if key not in box:
+         
+            box[key] = 1
+        else:
+            box[key] = box[key] + 1
+        
+    for a, valuer in box.items():
+        box_1.append(a)
+    
+    return box_1
+        
+
+result = dic_1(number)
+
+print(result)
