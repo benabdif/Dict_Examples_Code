@@ -1,0 +1,20 @@
+
+candles = [4,3,2,1,1,1,1,1,4,4]
+
+
+def birthdayCakeCandles(candles):
+    dic_1 = {}
+    nuuL = 0
+    for x in range(len(candles)):
+        ke_1 = candles[x]
+        if ke_1 not in dic_1:
+            dic_1[ke_1] = 1
+        else:
+            dic_1[ke_1] = dic_1[ke_1] + 1
+
+    for key, value in dic_1.items():
+        if value > nuuL:
+            nuuL = value
+    print(nuuL)
+
+birthdayCakeCandles(candles)
